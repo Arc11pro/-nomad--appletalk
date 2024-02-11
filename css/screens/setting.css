@@ -1,0 +1,113 @@
+:root {
+    --mac-gray-bright: rgb(237,237,237);
+    --mac-gray-dark: rgba(69,69,69,0.8);
+    --mac-red:rgb(255,95,87);
+    --mac-yellow:rgb(255,189,47);
+    --mac-green: rgb(41,201,65);
+
+    --section-padding: 5px 5px 15px 0px;
+    --section-border: 1px solid var(--mac-gray-bright);
+}
+
+.settings {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.setting-main {
+    background-color: rgb(245,245,247);
+}
+
+.setting-device {
+    position: absolute;
+
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.setting-device__header{
+    display: flex;
+    flex-direction: column;
+}
+
+.setting-device__header span:first-child{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.setting-device__header span:last-child{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.setting-device__devices {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+
+.setting-device__devices::-webkit-scrollbar{
+    display: none;
+}
+
+.device {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.device-img-box{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,250,252);
+    width: 370px;
+    height: 250px;
+}
+
+.device-img-box img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.device-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.device-owner {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.device-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.device-support {
+    font-size: 20px;
+    color: rgb(1,102,204);
+}
+
+
+@media screen and (min-width: 319px) and (max-width: 800px) {
+    .settings {
+        position: absolute;
+        top: 40px;
+    }
+}

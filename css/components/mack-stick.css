@@ -1,0 +1,64 @@
+:root {
+    --mac-gray-bright: rgb(69,69,69,0.1);
+    --mac-gray-dark: rgba(69,69,69,1);
+    --mac-red:rgb(255,95,87);
+    --mac-green:rgb(255,189,47);
+    --mac-yellow: rgb(41,201,65);
+}
+
+.mac-sticky {
+    position: sticky;
+}
+
+.mac-stick {
+    position: relative;
+
+    background-color: var(--mac-gray-bright);
+    padding: 10px 10px;
+    border-bottom: 0px solid rgba(69,69,69,0.5);
+}
+
+.mac-stick i{
+    padding-right: 10px;
+}
+
+.mac-stick i:first-child{
+    color:var(--mac-red);
+}
+
+.mac-stick i:nth-child(2){
+    color:var(--mac-yellow);
+}
+
+.mac-stick i:nth-child(3){
+    color:var(--mac-green);
+}
+
+.mac-stick__abs{
+    position: absolute;
+    font-size: 9.5px;
+    display: hidden;
+}
+
+.mac-stick .fa-x{
+    color: var(--mac-red);
+    left: 14.5px;
+    top: 13.5px;
+}
+
+.mac-stick .fa-minus{
+    color:var(--mac-yellow);
+    font-size: 12px;
+    left: 39px;
+    top: 12px;
+}
+.mac-stick .fa-up-right-and-down-left-from-center{
+    color: var(--mac-green);
+    font-size: 10px;
+    left: 65px;
+    top: 13px;
+}
+
+.mac-sticky:hover .mac-stick__abs{
+    color:var(--mac-gray-dark);
+}

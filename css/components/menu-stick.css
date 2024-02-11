@@ -1,0 +1,120 @@
+:root {
+    --bright-mode: rgb(218,218,218);
+    --mobile-weight: 500;
+}
+
+body {
+    position: relative;
+}
+
+.menu-sticks {
+    position: fixed;
+    top:0px;
+    z-index: 10;
+
+    background-color: rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 35px;
+}
+
+.menu-stick {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* 모바일 상태 표시창 */
+.mobile {
+    padding: 15px 5px 10px 5px;
+}
+
+.menu_stick__clock {
+    color: var(--bright-mode);
+    font-size: 18px;
+    font-weight: var(--mobile-weight);
+}
+
+.menu-stick__col i{
+    color: var(--bright-mode);
+}
+
+.menu-stick__col:first-child{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding-left: 10px;
+}
+
+.menu-stick__col:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.fa-battery-full {
+    font-size: 22px;
+    align-self: self-start;
+}
+
+/* 컴퓨터 상태 표시창 */
+.fa-apple {
+    font-size: 20px;
+}
+
+.menu_stick__setting {
+    color: var(--bright-mode);
+}
+
+.com {
+    padding-right: 5px;
+}
+
+.com div span{
+    color: var(--bright-mode);
+}
+
+.hf{
+    margin: 0px 4px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.hf:first-child, .hf:nth-child(2){
+    padding: 3px;
+}
+
+.hf:nth-child(7){
+    margin-left:5px;
+}
+
+.hf:last-child{
+    padding-left:0px;
+}
+
+.hf:hover {
+    background-color: grey;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile {
+        display: flex;
+        border-bottom-left-radius: 40px;
+    }
+
+    .com{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    .com{
+        display: flex;
+    }
+}

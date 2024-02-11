@@ -1,0 +1,103 @@
+:root {
+    --mac-gray-bright: rgb(237,237,237);
+    --mac-gray-dark: rgba(69,69,69,0.8);
+    --mac-red:rgb(255,95,87);
+    --mac-green:rgb(255,189,47);
+    --mac-yellow: rgb(41,201,65);
+}
+
+
+.stick-vertical {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237,237,237);
+    /* height: 240vh; */
+    padding: 0px;
+    border-radius: 20px 0px 0px 0px;
+
+    z-index: 0;
+}
+
+.mac-three-vertical {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 5px 5px;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.side-bar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 35px;
+}
+
+.side-bar i {
+    font-size: 22px;
+    color: var(--mac-gray-dark);
+}
+
+.side-bar i:first-child {
+    font-size: 22px;
+    color: var(--mac-gray-dark);
+}
+
+.side-bar .focus {
+    color: black;
+}
+
+#apple-bar{
+    font-size: 28px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .stick-vertical {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        z-index: 3;
+
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .com{
+        display: none;
+    }
+
+    .friends{
+        position: relative;
+    }
+
+    .stick-vertical {
+        height: 85px;
+        top: 95%;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .side-bar div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        height: 30px;
+        padding: 10px 30px 0px 30px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    .mobile {
+        display: none;
+    }
+
+    .com{
+        display: flex;
+    }
+}

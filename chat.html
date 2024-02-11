@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-sticks">
+        <div class="menu-stick mobile">
+            <div class="menu-stick__col">
+                <div class="menu_stick__clock">11:11</div>
+            </div>
+            <div class="menu-stick__col">
+                <i class="fa-solid fa-signal hf"></i>
+                <i class="fa-solid fa-wifi hf"></i>
+                <i class="fa-solid fa-battery-full hf"></i>
+            </div>
+        </div>
+        <div class="menu-stick com">
+            <div class="menu-stick__col">
+                <div class="menu_stick__apple hf"><i class="fa-brands fa-apple"></i></div>
+                <div class="menu_stick__setting hf">Apple Talk</div>
+                <div class="menu_stick__setting hf">편집</div>
+                <div class="menu_stick__setting hf">창</div>
+                <div class="menu_stick__setting hf">도움말</div>
+            </div>
+            <div class="menu-stick__col">
+                <i class="fa-solid fa-signal hf"></i>
+                <span class="hf">90%</span>
+                <i class="fa-solid fa-battery-full hf"></i>
+                <i class="fa-solid fa-wifi hf"></i>
+                <i class="fa-solid fa-magnifying-glass hf"></i>
+                <i class="fa-solid fa-bars-progress hf"></i>
+                <span class="hf"> 2월 10일 (토)</span>
+                <span class="hf"> 오전 10:00 </span>
+            </div>
+        </div>
+    </div>
+    <main class="friends helps">
+        <div class="stick-vertical com stick-vertical-support">
+    
+            <div class="mac-stick com mac-three-vertical">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <!-- <i class="fa-solid fa-x mac-stick__abs"></i>
+                <i class="fa-solid fa-minus mac-stick__abs"></i>
+                <i class="fa-solid fa-up-right-and-down-left-from-center mac-stick__abs"></i> -->
+                
+            </div>
+            <header class="side-bar">
+                <div>
+                    <a href='friends.html'><i class="fa-brands fa-apple" id=apple-bar></i></a>
+                    <a href="chat.html"><i class="fa-regular fa-comment"></i></a>
+                    <a href="shopping.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="setting.html"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+            </header>
+        </div>
+        <div class="stick-vertical mobile">
+            <header class="side-bar">
+                <div>
+                    <a href='friends.html'><i class="fa-brands fa-apple" id=apple-bar></i></a>
+                    <a href="chat.html"><i class="fa-regular fa-comment"></i></a>
+                    <a href="shopping.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="setting.html"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+            </header>
+        </div>
+        
+         <!-- 본문 -->
+        <div class="helps">
+            <section class="help-main">
+                <div class="help-main__header"> 
+                    <span>Get support</span>
+                    <span class="help-main__fast-cons">Start now</span>
+                </div>
+                <div class="help-main__footer">
+                    <span class="help-main__helping">Need you help?</span>
+                    <span class="help-main__helping-sub">Give us a few details and we’ll offer the best solution. Connect by phone, chat, email, and more.</span>
+                </div>
+                <!-- <img class="help-woman" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/cas/v1/GetSupportHero-person-11.png"/> -->
+                <img class="help-backgrond" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/cas/v1/Getsupport-Hero-bg.png"/>
+            </section>
+            <section class="help-search">
+                <div class="help-search__header">
+                    <span>Please enter what the problem is.</span>
+                </div>
+                <input placeholder="Ex: I forget password!">
+            </section>
+            <section class="recent-counsulation">
+                <div class="recent-counsulation__header">Recent Consultation History</div>
+                <div class="consulations">
+                    <a href="consulation.html">
+                        <div class="friends-friends__friend consulation">
+                            <div class="friends-frineds__col consulation__col">
+                                <img src="data:image/jpeg;base64,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"/>
+                            </div>
+                            <div class="friends-frineds__info consulation__info">
+                                <div class="friends-friends__name consulation__name">Name :John Giannandrea</div>
+                                <div class="friends-frineds__date consulation__date">recent message : 24.02.08</div>
+                            </div>
+                            <div class="consulation__go-to-meassge"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="consulation.html">
+                        <div class="friends-friends__friend consulation">
+                            <div class="friends-frineds__col consulation__col">
+                                <img src="https://www.apple.com/leadership/images/bio/tim-cook_image.png.og.png?1696970025049"/>
+                            </div>
+                            <div class="friends-frineds__info consulation__info">
+                                <div class="friends-friends__name consulation__name">Name : Tim cook</div>
+                                <div class="friends-frineds__date consulation__date">recent message : 24.02.05</div>
+                            </div>
+                            <div class="consulation__go-to-meassge"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="consulation.html">
+                        <div class="friends-friends__friend consulation">
+                            <div class="friends-frineds__col consulation__col">
+                                <img src="https://www.apple.com/leadership/images/bio/craig_federighi_image.png.og.png?1696968309960">
+                            </div>
+                            <div class="friends-frineds__info consulation__info">
+                                <div class="friends-friends__name consulation__name">Name : Craig Federighi</div>
+                                <div class="friends-frineds__date consulation__date">recent message : 24.02.04</div>
+                            </div>
+                            <div class="consulation__go-to-meassge"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="consulation.html">
+                        <div class="friends-friends__friend consulation">
+                            <div class="friends-frineds__col consulation__col">
+                                <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/3054850-inline-i-1-meet-tor-myhren-the-newest-marketing-mind-at-apple.jpg"/>
+                            </div>
+                            <div class="friends-frineds__info consulation__info">
+                                <div class="friends-friends__name consulation__name">Name : Tor Myhren</div>
+                                <div class="friends-frineds__date consulation__date">recent message : 24.01.25</div>
+                            </div>
+                            <div class="consulation__go-to-meassge"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="waring-small">
+        당신의<br> 화면은 <br>너무 <br> 작습니다.
+        Apple<br> 기기의 <br><br>넓<br>은 <br> 가<br>로<br><br>를 <br>경험 <br> 해보세요!
+    </div>
+    <script src="https://kit.fontawesome.com/de97c4dde9.js" crossorigin="anonymous"></script>
+</body>
+</html>

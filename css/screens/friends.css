@@ -1,0 +1,624 @@
+:root {
+    --mac-gray-bright: rgb(237,237,237);
+    --mac-gray-dark: rgba(69,69,69,0.8);
+    --mac-red:rgb(255,95,87);
+    --mac-yellow:rgb(255,189,47);
+    --mac-green: rgb(41,201,65);
+
+    --section-padding: 5px 5px 15px 0px;
+    --section-border: 1px solid var(--mac-gray-bright);
+}
+
+.friends {
+    display: flex;
+    height: 96vh;
+    /* min-width: 100vw; */
+}
+
+
+img {
+    width: 90px;
+    height: 90px;
+    border-radius: 23px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.frineds-chevron-up {
+    font-size: 15px;
+}
+
+.friends-main {
+    width: 88%;
+    
+}
+
+.freinds-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.freinds-top span{
+    font-size: 20px;
+}
+
+.freinds-top__right i{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.talk-help {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+
+    
+    background-color: rgb(237,237,237);
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.talk-help div span:first-child{
+    color: white;
+    background-color: grey;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+.friends-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--section-padding);
+    margin-bottom: 10px;
+
+    border-bottom: var(--section-border);
+}
+
+.friends-me div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.friends-me__profile img{
+    width: 60px;
+    height: 60px
+}
+
+.friends-me__name {
+    font-weight: 600;
+}
+
+.friends-me__multiprofile{
+    padding: 5px 11px 5px 11px;
+    border: 1px solid var(--mac-gray-dark);
+    border-radius: 20px;
+    color: var(--mac-gray-dark);
+    font-size: 13px;
+}
+
+
+
+/* -------- The Newest -------- */
+.friends-update {
+    padding: var(--section-padding);
+    border-bottom: var(--section-border);
+}
+
+.friends-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.update-comment:nth-child(2) {
+    color: var(--mac-gray-dark);
+}
+
+.friends-update__footer{
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.friends-update__footer::-webkit-scrollbar{
+    display: none;
+}
+
+.friends-update__item {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.friends-update__item div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 280px;
+    height: 330px;
+    padding: 15px;
+}
+
+.friends-update__item div span:first-child{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.friends-update__item div span:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.friends-update__item div span:nth-child(3){
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.item-white {
+    background-color: white;
+}
+
+.item-black{
+    background-color: black;
+    color: white
+}
+
+.grey-font {
+    color: var(--mac-gray-dark);
+}
+
+.white-font{
+    color:white;
+}
+
+.new-item-picture{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    object-position: 50% 60%;
+}
+
+.item-picture-long {
+    height: 250px;
+    bottom: 0px;
+    object-position: 50% 100%;
+}
+
+.item-picture-watch{
+    height: 250px;
+    bottom: 0px;
+    object-position: 50% 80%;
+}
+
+
+/* The nearset shop */
+
+.friends-pung {
+    padding: 20px 5px;
+    border-bottom: var(--section-border);
+}
+
+
+.friend-pung__pung {
+    display: flex;
+}
+
+.friends-pung__footer {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.friends-pung__footer::-webkit-scrollbar{
+    display: none;
+}
+
+.pung-box {
+    display: flex;
+    padding: 10px 30px 10px 10px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+}
+
+.pung-box__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.pung-box__store {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pung-box__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@keyframes pulse-green{
+    0% { 
+        box-shadow: 0 0 0px var(--mac-green);
+    }
+    50% { 
+        box-shadow: 0 0 10px var(--mac-green);
+    }
+    100% { 
+        box-shadow: 0 0 0px var(--mac-green);
+    }
+}
+
+@keyframes pulse-red{
+    0% { 
+        box-shadow: 0 0 0px var(--mac-red);
+    }
+    50% { 
+        box-shadow: 0 0 10px var(--mac-red);
+    }
+    100% { 
+        box-shadow: 0 0 0px var(--mac-red);
+    }
+}
+
+
+.fa-circle-state {
+    color: var(--mac-green);
+    font-size: 13px;
+    animation: pulse-green 2s infinite;
+    background-color: var(--mac-green);
+    border-radius: 50%;
+}
+
+.fa-circle-close{
+    color: var(--mac-red);
+    animation: pulse-red 2s infinite;
+    background-color: var(--mac-red);
+}
+
+.pung-box__locate{
+    color: var(--mac-gray-dark);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* ----------광고창---------- */
+
+.friends-ad {
+    /* position: relative; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(242,242,242);
+    border-radius: 20px;
+    padding-bottom: 0px;
+}
+
+.ad a {
+    display: flex;
+    justify-content: center;
+}
+
+.ad__left {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ad__rihgt {
+    display: flex;
+    align-items: center;
+}
+
+.ad__comment1 {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.ad__comment2 {
+    font-size: 15px;
+    color: var(--mac-gray-dark);
+    font-weight: 300;
+}
+
+.ad_name {
+    color: black;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ad-img {
+    width: 180px;
+    object-fit: cover;
+    top: 10px;
+    right: 10px;
+}
+
+.ad__name-big {
+    font-size: 50px;
+    font-weight: 800;
+
+    top: 10px;
+    right: 190px;
+}
+
+.friends-friends {
+    border-top: var(--section-border);
+    padding-top: 20px;
+}
+
+
+/* --------- 친구 목록 ---------- */
+.friends-friends {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-friends__friend {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--mac-gray-bright);
+    padding-left: 10px;
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+}
+
+.friends-frineds__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.friends-friends__name {
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.friends-friends__introduction {
+    font-size: 15px;
+    color: var(--mac-gray-dark);
+    font-weight: 400;
+}
+
+.friends-heart {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(120%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.friends-heart:hover .fa-heart {
+    animation: heartbeat 1s infinite;
+}
+
+
+.friends-frineds__btns{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    justify-self: flex-end;
+    
+}
+
+.consult-btn {
+    padding: 10px 20px;
+    width: 130px;
+    background-color: rgba(0,0,0,0.85);
+    color: white;
+    border-radius: 20px;
+    margin-bottom:0 ;
+    border: 1px solid black;
+}
+
+.consult-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .friends{
+        flex-direction: column;
+        
+    }
+
+    .friends-main {
+        width: 97%;
+        padding: 10px;
+        position: absolute;
+        top: 40px;
+    }
+
+    .update-comment{
+        font-size: 20px;
+    }
+    
+    .friends-update__item div{
+
+        width: 140px;
+        height: 180px;
+        padding: 15px;
+    }
+
+    .friends-update__item div span:first-child{
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .friends-update__item div span:nth-child(2){
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .friends-update__item div span:nth-child(3){
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .new-item-picture{
+        width: 100%;
+        height: 95px;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        object-position: 50% 65%;
+    }
+    
+    .item-picture-long {
+        height: 125px;
+        bottom: 0px;
+        object-position: 50% 90%;
+    }
+    
+    .item-picture-watch{
+        height: 125px;
+        bottom: 0px;
+        object-position: 50% 75%;
+    }
+
+    .pung-box__store {
+        font-size: 13px;
+    }
+    .pung-box__locate {
+        font-size: 12px;
+    }
+    .pung-box__state {
+        font-size: 10px;
+    }
+    .pung-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .ad__comment1 {
+        font-size: 15px;
+    }
+    .ad__commnet2 {
+        font-size: 12px;
+    }
+
+    .ad_name {
+        font-size: 20px;
+    }
+
+    .ad__name-big {
+        font-size: 25px;
+    }
+
+    .ad-img {
+        width: 100px;
+    }
+
+    
+    .friends-friends__friend{
+        gap: 10px;
+    }
+
+    .friends-frineds__col img{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .friends-friends__name {
+        font-size: 15px;
+    }
+
+    .friends-friends__introduction {
+        font-size: 8px;
+    }
+
+    .friends-heart {
+        width: 50px;
+        font-size: 8px;
+    }
+
+    .consult-btn {
+        padding: 5px 10px;
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .friends{
+        width:100vw;
+        position: absolute;
+        top: 35px;
+        /* justify-content: space-between; */
+        gap: 0px;
+    }
+
+    .friends-main{
+        padding: 10px;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .friends {
+        display: none;
+    }
+}
